@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.Encabezado header {
+    width: 100%;
+    min-height: calc(100px + 15vw);
+    position: relative; /* Asegura que el contenedor del header tenga un contexto de posicionamiento */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.Encabezado header img {
+    width: 100%; /* Asegura que la imagen cubra todo el ancho */
+    height: 100%; /* Asegura que la imagen cubra todo el alto, puedes ajustarlo según necesites */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin distorsionarse */
+    position: absolute; /* Posiciona la imagen de forma absoluta dentro de su contenedor */
+    top: 0;
+    left: 0;
+}
+
+
+.Encabezado .Perfil_izq {
+    padding: 25px 20px;
+    text-align: center;
+    max-width: 350px;
+    position: relative; /* Added a value for the position property */
+    margin: 0 auto;
+}
+
+.Encabezado .Perfil_izq .Imagen {
+    position: absolute;
+    top: -50px;
+    left: 50%; /* Adjusted to center the image */
+    transform: translateX(-50%);
+}
+
+.Encabezado .Perfil_izq .Imagen img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.18);
+}
+.Encabezado h1{
+   margin-top: 60px;
+   font-weight: 600;
+   font-size:22px;
+   margin-bottom: 5px;
+}
+.Encabezado p{
+    font-size:0.9rem;
+    margin: 35px 0;
+    justify-content: space-between;
+    position: relative;
+ }
+ .Hobbies {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Crea columnas automáticas que se ajustan al contenido */
+    gap: 10px; /* Espacio entre elementos */
+    justify-items: center;
+   
+  }
+  .Hobbies h2{
+    color: pink;
+    text-shadow: darkgrey;
+  }
+  .about__paragraph {
+    line-height: 1.7;
+  }
+  .about__icons {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .audiovisual{
+    background-color: pink;
+    color: #ffff;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+  }
+  .social{
+    background-color: pink;
+    color: #ffff;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+  }
+  .formulario{
+    padding: 25px 20px;
+    text-align: center;
+    max-width: 350px;
+    position: relative; /* Added a value for the position property */
+    margin: 0 auto;
+  }
+
+.Prueba {
+    background-image: linear-gradient(to right, yellow, black); /* Gradiente lineal de amarillo a negro */
+    color: white; /* Color del texto */
+    padding: 20px; /* Añadir espacio alrededor del video */
+    width: 100%; /* Ancho del contenedor */
+    text-align: center;
+}
+.Prueba p{
+   align-self: center;
+    font-weight: 600;
+    font-size:12px;
+    
+}
+
+.Prueba video {
+    width: 30%; /* Ancho del video al 100% del contenedor */
+    max-width: 50px; /* Máximo ancho del video */
+    display: block; /* Hacer que el video sea un elemento de bloque */
+    margin: 0 auto; /
+}
